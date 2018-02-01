@@ -23,7 +23,7 @@ script_path = os.path.dirname(sys.argv[0])
 if script_path != '':
     os.chdir(script_path)
 
-csvs = list(map(lambda x: x[:-4], filter(lambda x: x.endswith('.csv'), os.listdir())))
+csvs = list(sorted(map(lambda x: x[:-4], filter(lambda x: x.endswith('.csv'), os.listdir()))))
 
 last = csvs[-1].split('-')
 last_date = date(int(last[0]), int(last[1]), 1)
