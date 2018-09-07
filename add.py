@@ -47,13 +47,13 @@ with open(filename, 'x') as f:
 
         if day.weekday() == calendar.THURSDAY:
             pass
-        elif day.weekday() == calendar.SUNDAY:
-            time = "17-00"
-            anlass = "Newbie-Treffen"
-
-            sunday_cnt += 1
-            if sunday_cnt % 2 != 0:
-                continue
+        #elif day.weekday() == calendar.SUNDAY:
+        #    time = "17-00"
+        #    anlass = "Newbie-Treffen"
+        #
+        #    sunday_cnt += 1
+        #    if sunday_cnt % 2 != 0:
+        #        continue
         else:
             continue
 
