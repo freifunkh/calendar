@@ -42,7 +42,7 @@ with open(filename, 'x') as f:
         day = date(new_date.year, new_date.month, d)
 
         anlass = "Arbeitstreffen"
-        ort = "Computerwerkstatt"
+        ort = "LeineLab"
         time = "19-00"
 
         if day.weekday() == calendar.THURSDAY:
